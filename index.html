@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Trocchi|Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+  
+      <style>
+      body {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+body, input, button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, .nav-link {
+  font-family: 'Trocchi', serif;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: #3b3b3b;
+  text-align: right;
+  z-index: 1;
+}
+
+#header-img {
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0px;
+}
+
+#nav-bar a {
+  float: right;
+  display: block;
+  color: white;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#form {
+  margin-top: 55px;
+}
+
+
+#email {
+  height: 2em;
+  width: 15em;
+  border-radius: 1em;
+  padding-left: 0.6em;
+}
+
+#submit {
+  height: 3em;
+  width: 7em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+#features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features {
+  background-color: lightgray;
+  width: 75%;
+  border-radius: 4em;
+}
+
+#features, #working, #offers {
+  margin-top: 0px;
+  padding: 55px;
+}
+
+.material-icons {
+  font-size: 5em;
+}
+
+#video-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+#video {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#offers-container {
+  display: flex;
+  justify-content: center;
+}
+
+#offers {
+  background-color: grey;
+  width: 85%;
+  border-radius: 4em;
+}
+
+.offer {
+  background-color: lightgray;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+/*.specs {
+  display: inline-flex;
+  background-color: blanchedalmond;
+  float: center;
+  height: 3em;
+  width: 6em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 1.5em;
+}*/
+
+button {
+  height: 3em;
+  width: 6em;
+  border-radius: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: lightgray;
+  padding: 0.3em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  margin-left: 0.5em;
+}
+
+footer p {
+  color: #606060;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  
+  #video-container {
+    padding-top: initial;
+  }
+  
+  #video {
+    position: static;
+    height: 315px;
+    width: 560px;
+  }
+}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+
+  <!--learn.freecodecamp.org Responsive Web Design Projects - Build a Product Landing Page-->
+
+  
+  
+  <header id="header">
+    <img id="header-img" src="https://raw.githubusercontent.com/Ayudh-Khajne/FCC-product-landing-page/master/Original%20Nukes.png" alt="Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#offers">Offers</a>
+      <a class="nav-link" href="#working">Working</a>
+      <a class="nav-link" href="#features">Features</a>
+    </nav>
+  </header>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <p>Let's get started. Remain updated about the latest tech from <span style="font-family: 'Trocchi', serif;">Original Nukes</span> with our email feed subscription.</p>
+    <p><input id="email" type="email" name="email" placeholder="Enter your email" required=""></p>
+    <p><input id="submit" type="submit" value="Subscribe"></p>
+  </form>
+  <br>
+  
+  
+  <div id="features-container">
+    <div id="features">
+      <div>
+        <i class="material-icons">security</i>
+        <h2>Premium Materials</h2>
+        <div>Our nuclear explosives use the purest form of Uranium-365 which is sourced overseas. This ensures longer shelf life and smoother destruction.</div>
+      </div><br>
+      <div>
+        <i class="material-icons">local_shipping</i>
+        <h2>Safest Shipping</h2>
+        <div>We make sure that the nuclear arsenals reach their destination in a safe and environmentally friendly way. We also provide insurance for any kind of environmental damage and transportation losses.</div>
+      </div><br>
+      <div>
+        <i class="material-icons">check_box</i>
+        <h2>Quality Assurance</h2>
+        <div>For every purchase you make, we will ensure there are no damages or faults. We check and verify that there do not remain faults of any kind in any model of our nukes.</div>
+      </div>
+    </div>
+  </div>
+    
+  <br>
+  
+  
+  
+  <div id="working">
+    <h1>Get an idea of how the nukes appear when they are in action.</h1>
+    <div id="video-container"><iframe id="video" src="https://www.youtube-nocookie.com/embed/ETag3issaSE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
+  </div>
+  
+  
+  <div id="offers-container">
+    <div id="offers">
+      <div class="offer">
+        <h2>Alert series</h2>
+        <i class="material-icons">battery_alert</i>
+        <div>$40 million</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a lacus euismod, interdum.</div><br>
+        <button>Specs</button>
+      </div>
+      <div class="offer">
+        <h2>Full charge series</h2>
+        <i class="material-icons">battery_charging_full</i>
+        <div>$ 60 million</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis est ut elit.</div><br>
+        <button>Specs</button>
+      </div>
+      <div class="offer">
+        <h2>Unknown series</h2>
+        <i class="material-icons">battery_unknown</i>
+        <div>$ 50 million</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra neque a turpis.</div><br>
+        <button>Specs</button>
+      </div>
+    </div>
+  </div><br>
+  
+  
+  
+  <footer>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="https://www.freecodecamp.org/ayudh-khajne">Contact</a>
+    <p>Copyright 2100, Original Nukes</p>
+  </footer>
+  
+  
+ 
+</body>
+
+</html>
